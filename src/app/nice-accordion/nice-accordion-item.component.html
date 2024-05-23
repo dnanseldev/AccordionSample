@@ -1,0 +1,21 @@
+<div class="w-full h-24 text-white bg-gray-800 opacity-80 flex items-center justify-between">
+  <button class="h-auto font-bold text-3xl block">
+    Lorem ipsum dolor sit amet
+  </button>
+
+  <span [@rotate]="!show_content ? 'plane' : 'rotated'" class="mr-5"><fa-icon [icon]="faArrowRight"
+      class="mr-2 text-3xl hover:text-cyan-500 cursor-pointer" (click)="toggleContent()" /></span>
+</div>
+
+
+<div [@toogle]="!show_content ? 'close' : 'open'" class="bg-gray-800 opacity-80 text-white">
+  <p class="text-lg">
+    Curabitur tristique metus et scelerisque pulvinar. Nam ultrices lacinia viverra. Curabitur condimentum dui in dui
+    consequat, at dignissim diam sollicitudin. Maecenas sollicitudin lorem a lacus vestibulum, quis hendrerit est
+    varius. Donec cursus nec purus eget imperdiet. Praesent porttitor egestas nulla, a suscipit augue molestie quis.
+    Maecenas ut posuere nunc. Phasellus porttitor purus blandit, pretium ante dignissim, dictum lorem. Praesent quis
+    ligula efficitur, facilisis sapien nec, dictum ante. Aliquam dignissim tincidunt libero ut sodales. Ut vitae
+    ullamcorper est. Mauris in lorem justo. Vivamus in metus in dolor commodo imperdiet. Pellentesque sit amet diam in
+    ligula faucibus venenatis. Fusce sollicitudin laoreet justo, quis congue neque luctus eget
+  </p>
+</div>
